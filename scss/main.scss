@@ -1,0 +1,68 @@
+//import of new font
+// @import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+//chosen font 
+$font-family-base:"'Cambria";
+//other font ideas
+// $font-family-base:"'Courier New";
+// $font-family-base:"'Georgia";
+// $font-family-base:"'Times New Roman";
+
+@import "../node_modules/bootstrap/scss/functions";
+$enable-negative-margins:     true;
+
+//my theme colors
+$primary:rgba(176, 81, 150);
+
+
+$secondary:rgb(113, 62, 102);
+//import variables to allow new theme colors to work
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+//my custom colors
+$custom-colors:(
+    // "contrast":rgb(196, 196, 49),
+);
+//map merge is a function which merges the new custom colors with the existing colors you created
+$theme-colors: map-merge($theme-colors , $custom-colors);
+
+//removes these colors from the bootstrap css
+$theme-colors:map-remove($theme-colors, "danger", "warning","success","info" );
+
+$spacer:1rem;
+$spacers:(
+    1:$spacer *0.25,
+    2:$spacer *0.50,
+    3:$spacer,
+    4:$spacer * 2,
+    5:$spacer *4,
+    6:$spacer /2
+);
+
+// $utilities:();
+
+// $custom-utilities:(
+//     "rotate": (
+//         property: transform,
+//         class: rotate,
+//         values:(
+//             0: rotate(0deg),
+//             1: rotate(5deg),
+//             2: rotate(10deg),
+//             3: rotate(15deg),
+//             4: rotate(20deg),
+//             5: rotate(25deg)
+//         ),
+//     ) ,
+//     $custom-utilities: map-merge($utilities, $custom-utilities);
+
+//rounded have to say rounded when calling these in
+$border-radius:               .375rem;
+$border-radius-sm:            .25rem;
+$border-radius-lg:            .5rem;
+$border-radius-xl:            1rem;
+$border-radius-2xl:           2rem;
+$border-radius-pill:          50rem;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
