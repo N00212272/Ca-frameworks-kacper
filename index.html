@@ -9,44 +9,36 @@
 	</head>
 	<body>
 		
-			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary bg-gradient border-1 border-bottom">
-				<div class="container-xl">
-					<a class="navbar-brand" href="/index.html">LETS PARTY</a>
+			<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-primary bg-gradient border-1 border-bottom">
+				<div class="container-xl ">
+					<a class="navbar-brand " href="/index.html">LETS PARTY</a>
 					<button
 						class="navbar-toggler"
 						type="button"
+						data-bs-target="#navbarNav"
 						data-bs-toggle="collapse"
-						data-bs-target="#navbarScroll"
-						aria-controls="navbarScroll"
+						aria-controls="navbarNav"
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarScroll">
-						<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
-							<li class="nav-item">
-								<a class="nav-link" href="#">My Tickets</a>
+					<div 
+					class="collapse navbar-collapse" 
+					id="navbarNav">
+						<ul class="navbar-nav ">
+							<li class="nav-item active">
+								<a class="nav-link active" href="#">Tickets</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">My Favoutites</a>
+							<li class="nav-item active">
+								<a class="nav-link active " href="#">Favoutites</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Account</a>
+							<li class="nav-item active">
+								<a class="nav-link active" href="#">Account</a>
 							</li>
 						</ul>
-						<form class="d-flex" role="search">
-							<input
-								class="form-control me-2"
-								type="search"
-								placeholder="Search"
-								aria-label="Search"
-							/>
-							<button class="btn btn-outline-light" type="submit">
-								Search
-							</button>
-						</form>
 					</div>
+				
 				</div>
 			</nav>
 			<!-- FLuid image to open the page of a popular act -->
@@ -221,4 +213,10 @@
 			
 		
 	</body>
+	<!-- script for the small breakpoint hamburger to work -->
+	<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+	crossorigin="anonymous"
+></script>
 </html>
