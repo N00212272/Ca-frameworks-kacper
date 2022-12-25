@@ -19,15 +19,25 @@ $secondary:rgb(113, 62, 102);
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
-//my custom colors
+// my custom colors
 $custom-colors:(
-    // "contrast":rgb(196, 196, 49),
+    "contrast":rgb(100, 34, 100),
 );
+
+
 //map merge is a function which merges the new custom colors with the existing colors you created
 $theme-colors: map-merge($theme-colors , $custom-colors);
 
 //removes these colors from the bootstrap css
 $theme-colors:map-remove($theme-colors, "danger", "warning","success","info" );
+
+
+
+
+
+
+
+
 
 $spacer:1rem;
 $spacers:(
@@ -36,9 +46,16 @@ $spacers:(
     3:$spacer,
     4:$spacer * 2,
     5:$spacer *4,
-    6:$spacer /2
+    6:$spacer * 5.5
+  
 );
 
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+//to change the text white instead of having it dark as its harder to see with my secondary colour
+$card-color:("white");
+
+
+@import "../node_modules/bootstrap/scss/card";
 // $utilities:();
 
 // $custom-utilities:(
@@ -57,12 +74,10 @@ $spacers:(
 //     $custom-utilities: map-merge($utilities, $custom-utilities);
 
 //rounded have to say rounded when calling these in
-$border-radius:               .375rem;
-$border-radius-sm:            .25rem;
-$border-radius-lg:            .5rem;
-$border-radius-xl:            1rem;
-$border-radius-2xl:           2rem;
-$border-radius-pill:          50rem;
+// $border-radius:               .375rem;
+// $border-radius-sm:            .25rem;
+// $border-radius-lg:            .5rem;
+// $border-radius-xl:            1rem;
+// $border-radius-2xl:           2rem;
+// $border-radius-pill:          50rem;
 
-
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
