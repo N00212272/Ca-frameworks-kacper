@@ -29,7 +29,7 @@ $custom-colors:(
 $theme-colors: map-merge($theme-colors , $custom-colors);
 
 //removes these colors from the bootstrap css
-$theme-colors:map-remove($theme-colors, "danger", "warning","success","info" );
+// $theme-colors:map-remove($theme-colors, "danger", "warning","success","info" );
 
 
 
@@ -53,8 +53,15 @@ $spacers:(
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 //to change the text white instead of having it dark as its harder to see with my secondary colour
 $card-color:("white");
-
-
+//need to find out how to add this without changing bootsrap css
+//this changes the bootstrap scss and didnt know how to add this function to the card variable given by bootstrap
+.card:hover{
+    transform: scale(1.02)
+}
+// $custom-card:(
+//     hover:(transform(scale(1.02)))
+// );
+// $custom-card: variable-merge($card , $custom-card);
 @import "../node_modules/bootstrap/scss/card";
 // $utilities:();
 

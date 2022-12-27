@@ -11725,6 +11725,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.card:hover {
+  transform: scale(1.02);
+}
+
 .card {
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
