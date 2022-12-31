@@ -6,14 +6,12 @@ $font-family-base:"'Cambria";
 // $font-family-base:"'Courier New";
 // $font-family-base:"'Georgia";
 // $font-family-base:"'Times New Roman";
-
+//negative margins allowed me to move components freely
 @import "../node_modules/bootstrap/scss/functions";
 $enable-negative-margins:     true;
 
 //my theme colors
 $primary:rgba(176, 81, 150);
-
-
 $secondary:rgb(113, 62, 102);
 //import variables to allow new theme colors to work
 @import "../node_modules/bootstrap/scss/variables";
@@ -28,17 +26,10 @@ $custom-colors:(
 //map merge is a function which merges the new custom colors with the existing colors you created
 $theme-colors: map-merge($theme-colors , $custom-colors);
 
-//removes these colors from the bootstrap css
+//removes these colors from the bootstrap css 
 // $theme-colors:map-remove($theme-colors, "danger", "warning","success","info" );
 
-
-
-
-
-
-
-
-
+//created a new spacer to 
 $spacer:1rem;
 $spacers:(
     1:$spacer *0.25,

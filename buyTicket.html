@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Main Page</title>
+		
+		<link rel="stylesheet" href="css/main.css"/>
+	</head>
+	<body>
+		
+			<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-primary bg-gradient border-1 border-bottom">
+				<div class="container-xl ">
+					<a class="navbar-brand " href="/index.html">LETS PARTY</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-target="#navbarNav"
+						data-bs-toggle="collapse"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div 
+					class="collapse navbar-collapse" 
+					id="navbarNav">
+						<ul class="navbar-nav ">
+							<li class="nav-item active">
+								<a class="nav-link active" href="#">Tickets</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link active " href="#">Favoutites</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link active" href="#">Account</a>
+							</li>
+						</ul>
+					</div>
+				    <nav aria-label="breadcrumb ">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                          <li class="breadcrumb-item"><a href="/viewConent.html">View Event</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Payment</li>
+                        </ol>
+                      </nav>
+				</div>
+              
+			</nav>
+			<!-- FLuid image to open the page of a popular act -->
+           
+			<div class="container-fluid bg-primary  py-5">
+                <hr class="border border-1 opacity-100" />
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="images/wp6116215-drake-concert-wallpapers.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="bg-secondary text-center text-white text-capitalize">Best available tickets for You</h4>
+                       <h1>Drake</h1>
+                       <h2>25th september 2022</h2>
+                       <h3>3 Arena</h3>
+
+                       <div class="dropdown mt-1 mb-2">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Standing
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Standing</a></li>
+                          <li><a class="dropdown-item" href="#">Golden Circle</a></li>
+                          <li><a class="dropdown-item" href="#">Sitting</a></li>
+                        </ul>
+                      </div>
+                      
+                       <h4 class="fw-bold">€85 PP</h4>
+                       <a href="#paymentForm" class="text-contrast"><h3>Proceed to payment</h3>
+                        </a
+                    >
+
+                    </div>
+                    <div class="col-lg-3">
+                        
+                        <h4 class="bg-secondary text-center text-white text-capitalize">Other Tickets</h4>
+                        <hr class="border border-1 opacity-100" />
+                        <div class="row">
+                        <div class="col-lg-6">
+                    
+                        <h5>24th September 2022</h5>
+                        <h5>3 Arena Dublin</h5>
+                        <h5>€85 PP</h5>
+                    </div>
+                    <div class="col-lg-6">
+                    <a href="buyTicket.html" class="btn btn-secondary text-light mt-2  fw-semibold"
+                        >BUY TICKET</a
+                    >
+                    </div>
+                </div>
+                <hr class="border border-1 opacity-100" />
+                <div class="row">
+                    <div class="col-lg-6">
+                
+                    <h5>30th September 2022</h5>
+                    <h5>O2 Arena, London</h5>
+                    <h5>£90 PP</h5>
+                </div>
+                <div class="col-lg-6">
+                <a href="buyTicket.html" class="btn btn-secondary text-light mt-2  fw-semibold"
+                    >BUY TICKET</a
+                >
+                </div>
+            </div>
+                
+            <hr class="border border-1 opacity-100" />
+                </div>
+                    
+            </div>
+        </div>
+        <div class="dropdown-menu ">
+            <form class="px-4 py-3">
+              <div class="mb-3">
+                <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+              </div>
+              <div class="mb-3">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                  <label class="form-check-label" for="dropdownCheck">
+                    Remember me
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">New around here? Sign up</a>
+            <a class="dropdown-item" href="#">Forgot password?</a>
+          </div>
+		
+        <h1 id="paymentForm" class="text-white text-center bg-secondary">Payment</h1>
+	</body>
+	<!-- script for the small breakpoint hamburger to work -->
+	<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+	crossorigin="anonymous"
+></script>
+</html>
