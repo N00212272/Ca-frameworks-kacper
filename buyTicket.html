@@ -9,9 +9,10 @@
 	</head>
 	<body>
 		
-			<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-primary bg-gradient border-1 border-bottom">
+			<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-primary bg-gradient border-1 ">
 				<div class="container-xl ">
-					<a class="navbar-brand " href="/index.html">LETS PARTY</a>
+					<a class="navbar-brand " href="/index.html"><img src="/images/logo2.PNG" class="" alt="">
+            LETS PARTY</a>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -52,7 +53,7 @@
 			</nav>
 			<!-- FLuid image to open the page of a popular act -->
            
-			<div class="container-fluid bg-primary  py-5">
+			<div class="container-fluid bg-primary  py-7">
                 <hr class="border border-1 opacity-100" />
                 <div class="row">
                     <div class="col-lg-6">
@@ -64,7 +65,28 @@
                        <h2>25th september 2022</h2>
                        <h3>3 Arena</h3>
 
-                       <div class="dropdown mt-1 mb-2">
+                       <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Standing
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" disabled >
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Golden Circle
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Sitting
+                        </label>
+                      </div>
+
+                      <!-- other potential multi-option  -->
+
+                       <!-- <div class="dropdown mt-1 mb-2">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                           Standing
                         </button>
@@ -73,12 +95,12 @@
                           <li><a class="dropdown-item" href="#">Golden Circle</a></li>
                           <li><a class="dropdown-item" href="#">Sitting</a></li>
                         </ul>
-                      </div>
+                      </div> -->
                       
                        <h4 class="fw-bold">€85 PP</h4>
-                       <a href="#paymentForm" class="text-contrast"><h3>Proceed to payment</h3>
+                       <!-- <a href="#paymentForm" class="text-contrast"><h3>Proceed to payment</h3>
                         </a
-                    >
+                    > -->
 
                     </div>
                     <div class="col-lg-3">
@@ -118,33 +140,64 @@
                     
             </div>
         </div>
-        <div class="dropdown-menu ">
-            <form class="px-4 py-3">
-              <div class="mb-3">
-                <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-              </div>
-              <div class="mb-3">
-                <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-              </div>
-              <div class="mb-3">
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                  <label class="form-check-label" for="dropdownCheck">
-                    Remember me
-                  </label>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary">Sign in</button>
-            </form>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">New around here? Sign up</a>
-            <a class="dropdown-item" href="#">Forgot password?</a>
-          </div>
+      </div>
+       
+      
 		
-        <h1 id="paymentForm" class="text-white text-center bg-secondary">Payment</h1>
+        <h1 class="text-white text-center text-capitalize bg-secondary mb-4  "> payment</h1>
+<div class="container">
+        <form class="row g-3 needs-validation " action="/myTickets.html" >
+
+          <div class="col-md-6">
+            <label for="cardName" class="form-label">Name on Card</label>
+            <input type="text" class="form-control" id="cardNo" required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="cardNo" class="form-label">Card Number</label>
+            <input type="text" class="form-control" id="cardNo" required>
+          </div>
+          
+          <div class="col-md-1">
+            <label for="expiry" class="form-label">Expiry Date</label>
+            <input type="text" class="form-control" id="expiry" required>
+          </div>
+          <div class="col-md-1">
+            <label for="cvv" class="form-label">CVV</label>
+            <input type="text" class="form-control" id="cvv" required>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label text-capitalize" for="invalidCheck">
+               Billing Address is same as address
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Purchase Ticket</button>
+          </div>
+        </form>
+      </div>
+ 
 	</body>
+  
+  <footer class="py-3 my-4 container-fluid bg-secondary">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">&copy; Lets Party 2022 Company, Inc</p>
+  </footer>
 	<!-- script for the small breakpoint hamburger to work -->
 	<script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
