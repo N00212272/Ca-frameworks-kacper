@@ -80,9 +80,13 @@ $card-color:("white");
 // $border-radius-xl:            1rem;
 // $border-radius-2xl:           2rem;
 // $border-radius-pill:          50rem;
-
 //Changed the checked color to make it more visible to the checked
 $form-check-input-checked-bg-color:(
     $secondary
 );
+
+// tried to changed the padding left as it was not properly in the container in a small breakpoint
+//It didn't work
+// $form-check-padding-left:100px;
+
 @import "../node_modules/bootstrap/scss/forms/form-check";
