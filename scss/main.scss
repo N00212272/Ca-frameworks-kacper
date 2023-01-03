@@ -42,7 +42,7 @@ $spacers:(
   
 );
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 //to change the text white instead of having it dark as its harder to see with my secondary colour
 $card-color:("white");
 //need to find out how to add this without changing bootsrap css
@@ -90,3 +90,4 @@ $form-check-input-checked-bg-color:(
 // $form-check-padding-left:100px;
 
 @import "../node_modules/bootstrap/scss/forms/form-check";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
