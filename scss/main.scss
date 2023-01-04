@@ -1,7 +1,15 @@
 //import of new font
-// @import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 //chosen font 
-$font-family-base:"'Cambria";
+$font-family-base: 'Playfair Display', serif;
+$display-emphasis-font-family: 'Lato', sans-serif;
+.display-secondary {
+    font-family: $display-emphasis-font-family;
+   
+}
+
+// $font-family-base:"'Cambria";
 //other font ideas
 // $font-family-base:"'Courier New";
 // $font-family-base:"'Georgia";
@@ -11,8 +19,14 @@ $font-family-base:"'Cambria";
 $enable-negative-margins:     true;
 
 //my theme colors
-$primary:rgba(176, 81, 150);
-$secondary:rgb(113, 62, 102);
+// $primary:rgba(176, 81, 150);
+// $secondary:rgb(113, 62, 102);
+// $primary:rgb(95, 75, 139);
+// $secondary:rgb(230, 154, 141);
+// $secondary:rgb(95, 75, 139);
+// $primary:rgb(230, 154, 141);
+$secondary:rgb(203, 206, 145);
+$primary:rgb(118, 82, 139);
 //import variables to allow new theme colors to work
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -51,6 +65,7 @@ $card-color:("white");
 .card:hover{
     transform: scale(1.02)
 }
+
 
 // $custom-card:(
 //     hover:(transform(scale(1.02)))
