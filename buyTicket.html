@@ -61,11 +61,11 @@
                     </div>
                     <div class="col-lg-3">
                         <h4 class="bg-secondary text-center text-white text-capitalize">Best available tickets for You</h4>
-                       <h1>Drake</h1>
-                       <h2>25th september 2022</h2>
-                       <h3>3 Arena</h3>
+                       <h1 class="display-secondary">Drake</h1>
+                       <h2 class="display-secondary">25th september 2022</h2>
+                       <h3 class="display-secondary">3 Arena</h3>
 
-                       <div class="form-check">
+                       <div class="form-check display-secondary">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
                         <label class="form-check-label" for="flexRadioDefault1">
                           Standing
@@ -94,7 +94,7 @@
 
                       
                       
-                       <h4 class="fw-bold">€85 PP</h4>
+                       <h4 class="fw-bold display-secondary">€85 PP</h4>
                        <!-- <a href="#paymentForm" class="text-contrast"><h3>Proceed to payment</h3>
                         </a
                     > -->
@@ -107,9 +107,9 @@
                         <div class="row">
                         <div class="col-lg-6">
                     
-                        <h5>24th September 2022</h5>
-                        <h5>3 Arena Dublin</h5>
-                        <h5>€85 PP</h5>
+                        <h5 class="display-secondary">24th September 2022</h5>
+                        <h6 class="display-secondary">3 Arena Dublin</h6>
+                        <h7 class="display-secondary">€85 PP</h7>
                     </div>
                     <div class="col-lg-6">
                     <a href="buyTicket.html" class="btn btn-secondary text-light mt-2  fw-semibold"
@@ -121,9 +121,9 @@
                 <div class="row">
                     <div class="col-lg-6">
                 
-                    <h5>30th September 2022</h5>
-                    <h5>O2 Arena, London</h5>
-                    <h5>£90 PP</h5>
+                    <h5 class="display-secondary">30th September 2022</h5>
+                    <h6 class="display-secondary">O2 Arena, London</h6>
+                    <h7 class="display-secondary">£90 PP</h7>
                 </div>
                 <div class="col-lg-6">
                 <a href="buyTicket.html" class="btn btn-secondary text-light mt-2  fw-semibold"
@@ -141,7 +141,7 @@
        
       
 		
-        <h1 class="text-white text-center text-capitalize bg-secondary mb-4  "> payment</h1>
+        <h1 class="text-white text-center text-capitalize bg-secondary mb-4 mt-n4  "> payment</h1>
 <div class="container">
         <form class="row g-3 needs-validation " action="/myTickets.html" >
 
@@ -179,13 +179,37 @@
               </label>
             </div>
           </div>
-          <div class="col-12">
-            <button class="btn btn-primary" type="submit">Purchase Ticket</button>
+          <div class="">
+          <button type="button" class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#verification">
+            Purchase Ticket
+          </div>
+          </button>
+          <!-- This is the functionality for the modal to confirm the user before proceeding -->
+          <div class="modal fade" id="verification" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalTitle">Are you sure you want to purchase this ticket</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Proceed</button>
+                </div>
+              </div>
+            </div>
           </div>
         </form>
       </div>
  
 	</body>
+  
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+
+
   
   <footer class="py-3 mt-4 container-fluid bg-secondary">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
