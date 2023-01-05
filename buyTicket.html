@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Main Page</title>
+		<title>Buy page</title>
 		
 		<link rel="stylesheet" href="css/main.css"/>
 	</head>
@@ -39,6 +39,7 @@
 							</li>
 						</ul>
 					</div>
+          	<!-- breadcrumb trail for user to go back -->
           <div class="d-none d-md-block">
 				    <nav aria-label="breadcrumb ">
                         <ol class="breadcrumb">
@@ -51,7 +52,7 @@
 				</div>
               
 			</nav>
-			<!-- FLuid image to open the page of a popular act -->
+		<!-- Start of the chosen ticket container -->
            
 			<div class="container-fluid bg-primary  py-7">
                 <hr class="border border-1 opacity-100" />
@@ -91,15 +92,10 @@
                         <option>2</option>
                         <option>3</option>
                       </select>
-
-                      
-                      
+                                        
                        <h4 class="fw-bold display-secondary">€85 PP</h4>
-                       <!-- <a href="#paymentForm" class="text-contrast"><h3>Proceed to payment</h3>
-                        </a
-                    > -->
-
                     </div>
+                    <!-- other ticket options -->
                     <div class="col-lg-3">
                         
                         <h4 class="bg-secondary text-center text-white text-capitalize">Other Tickets</h4>
@@ -138,17 +134,17 @@
             </div>
         </div>
       </div>
-       
+       <!-- end of chosen ticket container -->
       
-		
+		<!-- start of payment  -->
         <h1 class="text-white text-center text-capitalize bg-secondary mb-4 mt-n4  "> payment</h1>
-<div class="container">
-        <form class="row g-3 needs-validation " action="/myTickets.html" >
+          <div class="container">
+            <form class="row g-3 needs-validation " action="/myTickets.html" >
 
-          <div class="col-md-6">
-            <label for="cardName" class="form-label">Name on Card</label>
-            <input type="text" class="form-control" id="cardNo" required>
-          </div>
+              <div class="col-md-6">
+                <label for="cardName" class="form-label">Name on Card</label>
+                  <input type="text" class="form-control" id="cardNo" required>
+              </div>
 
           <div class="col-md-6">
             <label for="cardNo" class="form-label">Card Number</label>
@@ -184,6 +180,7 @@
             Purchase Ticket
           </div>
           </button>
+          	<!-- end of payment  -->
           <!-- This is the functionality for the modal to confirm the user before proceeding -->
           <div class="modal fade" id="verification" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
             <div class="modal-dialog">
@@ -201,13 +198,9 @@
           </div>
         </form>
       </div>
- 
+ <!-- end of payment container -->
 	</body>
-  
-<!-- Button trigger modal -->
-
-
-<!-- Modal -->
+  <!-- end of body -->
 
 
   
