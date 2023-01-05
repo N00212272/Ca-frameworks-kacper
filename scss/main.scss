@@ -9,25 +9,31 @@ $display-secondary-font-family: 'Lato', sans-serif;
    
 }
 
-
-// $font-family-base:"'Cambria";
 //other font ideas
+// $font-family-base:"'Cambria";
 // $font-family-base:"'Courier New";
 // $font-family-base:"'Georgia";
 // $font-family-base:"'Times New Roman";
-//negative margins allowed me to move components freely
+
 @import "../node_modules/bootstrap/scss/functions";
+
+//negative margins allowed me to move components freely
 $enable-negative-margins:     true;
 
+
 //my theme colors
+$primary:rgb(84, 47, 232);
+$secondary:rgb(25, 29, 98);
+
+// Other colours i tried
+
 // $primary:rgba(176, 81, 150);
 // $secondary:rgb(113, 62, 102);
 // $primary:rgb(95, 75, 139);
 // $secondary:rgb(230, 154, 141);
 // $secondary:rgb(95, 75, 139);
 // $primary:rgb(230, 154, 141);
-$primary:rgb(84, 47, 232);
-$secondary:rgb(25, 29, 98);
+
 //import variables to allow new theme colors to work
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -36,6 +42,8 @@ $secondary:rgb(25, 29, 98);
 $custom-colors:(
     "contrast":rgb(15, 66, 117),
     "low":rgb(255, 88, 0),
+    // My background body color
+    "backG":rgb( 207, 246, 255),
 );
 
 
@@ -70,12 +78,15 @@ $card-color:("white");
     transform: scale(1.02)
 }
 
-
+// tried to create a custom color card which already had the hover feature
 // $custom-card:(
 //     hover:(transform(scale(1.02)))
 // );
 // $custom-card: variable-merge($card , $custom-card);
 @import "../node_modules/bootstrap/scss/card";
+
+//Tried to create a my own rotations in a component i wanted to use but scrapped the idea
+
 // $utilities:();
 
 // $custom-utilities:(
@@ -93,6 +104,8 @@ $card-color:("white");
 //     ) ,
 //     $custom-utilities: map-merge($utilities, $custom-utilities);
 
+// Didnt change the border radius in the end
+
 //rounded have to say rounded when calling these in
 // $border-radius:               .375rem;
 // $border-radius-sm:            .25rem;
@@ -100,6 +113,8 @@ $card-color:("white");
 // $border-radius-xl:            1rem;
 // $border-radius-2xl:           2rem;
 // $border-radius-pill:          50rem;
+
+
 //Changed the checked color to make it more visible to the checked
 $form-check-input-checked-bg-color:(
     $secondary
@@ -107,6 +122,7 @@ $form-check-input-checked-bg-color:(
 
 // tried to changed the padding left as it was not properly in the container in a small breakpoint
 //It didn't work
+
 // $form-check-padding-left:100px;
 
 
