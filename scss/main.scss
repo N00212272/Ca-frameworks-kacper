@@ -35,6 +35,7 @@ $secondary:rgb(77, 31, 100);
 // my custom colors
 $custom-colors:(
     "contrast":rgb(15, 66, 117),
+    "low":rgb(255, 88, 0),
 );
 
 
@@ -42,7 +43,9 @@ $custom-colors:(
 $theme-colors: map-merge($theme-colors , $custom-colors);
 
 //removes these colors from the bootstrap css 
-// $theme-colors:map-remove($theme-colors, "danger", "warning","success","info" );
+$theme-colors:map-remove($theme-colors, "warning" );
+
+
 
 //created a new spacer to 
 $spacer:1rem;
